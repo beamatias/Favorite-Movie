@@ -1,0 +1,113 @@
+.container .title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  .title .query-text {
+    color: #f7d354;
+  }
+  
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .movies-container div {
+    width: 30%;
+    color: #fff;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3e1212;
+    padding: 1.5rem;
+    border: 2px solid #ffea00;
+    }
+  
+  .movies-container div img {
+    max-width: 100%;
+  }
+  
+  .movies-container div img,
+  .movies-container div p {
+    margin-bottom: 1rem;
+  }
+  
+  .movies-container div h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .movies-container div svg {
+    color: #facf34;
+  }
+  
+  .movies-container div a {
+    background: linear-gradient(to left, rgba(148, 0, 0, 0.957), #000);
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .movies-container div a:hover {
+    background-color: transparent;
+    color: #f7d354;
+  }
+
+
+@media (max-width: 768px) {
+  .movies-container div {
+      width: 45%; /* 1 card por linha */
+  }
+
+  .container .title {
+      font-size: 2rem; /* Tamanho da fonte menor em telas menores */
+  }
+}
+
+@media (max-width: 460px) {
+  .movies-container div {
+    width: 100%; 
+}
+}
+
+@media (max-width: 375px) {
+  .movies-container {
+      justify-content: center; /* Centraliza os cards */
+  }
+
+  .movies-container div {
+      width: 90%; /* Ajusta a largura dos cards para 90% */
+  }
+
+  .container .title {
+      font-size: 1.8rem; /* Tamanho da fonte menor em telas de 375px */
+  }
+}
+
+@media (max-width: 320px) {
+  .movies-container {
+      justify-content: center;
+
+  }
+
+  .movies-container div {
+      width: 100%;
+  }
+
+  .container .title {
+      font-size: 1.6rem; /* Tamanho da fonte ainda menor em telas de 320px */
+  }
+
+  .movies-container {
+      padding: 1rem; /* Reduzir o padding para telas menores */
+  }
+}
