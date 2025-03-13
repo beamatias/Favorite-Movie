@@ -4,7 +4,7 @@ import { BiSearchAlt2 } from "react-icons/bi";
 
 import ImgLogo from "../../public/img/logoCine.png";
 
-import "./Navbar.css";
+import "./NavBar.css";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
